@@ -49,3 +49,15 @@ print(about_list)  # ['banana', 'blackcurrant', 'papaya', 'watermelon', True, 10
 # Insert list items(2)
 about_list.append("pencil")
 print(about_list)  # ['banana', 'blackcurrant', 'papaya', 'watermelon', True, 10.11, 'pencil']
+
+# Extend list - To append elements from another list to the current list, use the extend() method.
+extend_list_sample = ["green", "positive"]
+about_list.extend(extend_list_sample)
+print(about_list)  # ['banana', 'blackcurrant', 'papaya', 'watermelon', True, 10.11, 'pencil', 'green', 'positive']
+
+# Add Any Iterable -
+# The extend() method does not have to append lists, you can add any iterable object (tuples, sets, dictionaries etc.).
+extend_tuple_sample = ("kiwi", "orange")
+about_list.extend(extend_tuple_sample)
+print(about_list)
+# ['banana', 'blackcurrant', 'papaya', 'watermelon', True, 10.11, 'pencil', 'green', 'positive', 'kiwi', 'orange']

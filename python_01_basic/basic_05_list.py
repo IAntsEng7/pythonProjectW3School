@@ -38,3 +38,14 @@ else:
 # Change Item Value
 about_list[1] = 'coke'
 print(about_list)  # ['banana', 'coke', 'Apple', 10, True, 10.11]
+
+# Change a Range of Item Values
+about_list[1:4] = ["blackcurrant", "watermelon"]
+print(about_list)  # ['banana', 'blackcurrant', 'watermelon', 10, True, 10.11]
+
+# Insert list items(1)
+about_list.insert(2, "papaya")
+print(about_list)  # ['banana', 'blackcurrant', 'papaya', 'watermelon', True, 10.11]
+# Insert list items(2)
+about_list.append("pencil")
+print(about_list)  # ['banana', 'blackcurrant', 'papaya', 'watermelon', True, 10.11, 'pencil']
